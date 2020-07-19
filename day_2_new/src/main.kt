@@ -1,13 +1,11 @@
 fun main(){
-    var x = 30
-
-    while(x>20){
-        x = x - 1
-        print("x is now $x")
-    }
-
-    for (i in 1..10){
+    var x = 1
+    //          1   1   2  2  3
+    //ต้องพิมคำว่า Yab ba Dab ba Do
+    while ( x < 3) {
+        print(if (x == 1) "Yab" else "Dab" )
+        print("ba")
         x = x + 1
     }
-    print("x is now $x")
+    if (x == 3) println ("Do")
 }
