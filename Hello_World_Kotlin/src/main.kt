@@ -1,10 +1,24 @@
+//Chapter 4
+//For 2 august 2020 class
+
 fun main(){
-    println("Hello World from Kotlin !")
 
-    var x = 3
-
-    while (x >1){
-        println("X is $x")
-        x = x -1
+    //-------------------- let's define a dog class ------------------------
+    class Dog(val name: String, val weight: Int, val breed: String) {
+        fun bark() {
+            println(if (weight < 20) "${breed} - Yep!" else "${breed} - Woof!")
+        }
     }
+
+    var my70Dog = Dog("Fido", 70, "Mixed")
+    var my20Dog = Dog("Shiro", 15, "Golden retriever")
+
+    my70Dog.bark()
+    my20Dog.bark()
+    //-------------------- let's define a dog class ------------------------
+
+
+
+
+
 }
