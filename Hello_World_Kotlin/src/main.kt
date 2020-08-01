@@ -3,10 +3,10 @@
 
 fun main(){
 
-    //-------------------- let's define a dog class ------------------------
+    //-------------------- let's define a dog class
     class Dog(val name: String, val weight: Int, val breed: String) {
         fun bark() {
-            println(if (weight < 20) "${breed} - Yep!" else "${breed} - Woof!")
+            println(if (weight < 20) "${name} - Yep!" else "${name} - Woof!")
         }
     }
 
@@ -15,10 +15,21 @@ fun main(){
 
     my70Dog.bark()
     my20Dog.bark()
-    //-------------------- let's define a dog class ------------------------
+    //-------------------- let's define a dog class
 
+    //-------------------- What if the Dog is in a Dog array?
+    var dogs = arrayOf(Dog("Lucky", 15, "Mixed"), Dog("Browny",40, "Thai"))
+    dogs[0].bark()
+    dogs[1].bark()
 
+    //-------------------- What if the Dog is in a Dog array?
 
+    //Create a Songs application
+    val songOne = Song("As long as you love me", "Backstreet boy")
+    val songTwo = Song("Lucky", "Britney Spears")
 
-
+    songOne.play()
+    songOne.stop()
+    songTwo.play()
+    songTwo.stop()
 }
