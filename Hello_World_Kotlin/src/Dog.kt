@@ -9,8 +9,20 @@ class Dog(val name: String, val weight: Int, breed_param: String) {
     val activities = arrayOf("Walks")
     val breed = breed_param.toUpperCase()
 
+    val weightiInKgs: Double
+    get() = weight / 2.2
+
+    var newWeight = weight
+    set(value) {
+        if (value>0){
+            field = value
+        }
+
+    }
+
+
     init {
-        println("The breed is ${breed}")
+        println("The breed is ${breed} and ${weightiInKgs} kgs")
     }
 
     fun bark() {
