@@ -1,14 +1,8 @@
 //Chapter 4
 //For 2 august 2020 class
+// Reformat Code from the main menu or press Ctrl+Alt+L
 
 fun main(){
-
-    //-------------------- let's define a dog class
-    class Dog(val name: String, val weight: Int, val breed: String) {
-        fun bark() {
-            println(if (weight < 20) "${name} - Yep!" else "${name} - Woof!")
-        }
-    }
 
     var my70Dog = Dog("Fido", 70, "Mixed")
     var my20Dog = Dog("Shiro", 15, "Golden retriever")
