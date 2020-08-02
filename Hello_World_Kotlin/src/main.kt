@@ -3,27 +3,21 @@
 // Reformat Code from the main menu or press Ctrl+Alt+L
 
 fun main(){
+    // น้องชื่อ Lucky, น้ำหนัก 50 ปอนด์ พันธุ์ Golden Retriever
+    var lucky = Dog("ลั้กกี้", 50, "Golden Retriever")
 
-    var my70Dog = Dog("Fido", 70, "Mixed")
-    var my20Dog = Dog("Shiro", 15, "Golden retriever")
+    // น้องชื่อ Browny, น้ำหนัก 20 ปอนด์ พันธุ์ Mixed Thai
+    var browny = Dog("บราวนี่", 18, "Mixed Thai")
 
-    my70Dog.bark()
-    my20Dog.bark()
-    //-------------------- let's define a dog class
+    // น้องชื่อ หางดาบ, น้ำหนัก 100 ปอนด์ พันธุ์บางแก้ว
+    var หางดาบ = Dog("หางดาบ",100,"บางแก้ว")
 
-    //-------------------- What if the Dog is in a Dog array?
-    var dogs = arrayOf(Dog("Lucky", 15, "Mixed"), Dog("Browny",40, "Thai"))
-    dogs[0].bark()
-    dogs[1].bark()
+    println(lucky.name)
+    println(browny.name)
+    println(หางดาบ.name)
 
-    //-------------------- What if the Dog is in a Dog array?
+    lucky.bark()
+    browny.bark()
+    หางดาบ.bark()
 
-    //Create a Songs application
-    val songOne = Song("As long as you love me", "Backstreet boy")
-    val songTwo = Song("Lucky", "Britney Spears")
-
-    songOne.play()
-    songOne.stop()
-    songTwo.play()
-    songTwo.stop()
 }
