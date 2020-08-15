@@ -1,11 +1,11 @@
-//Chapter 4
-//For 2 august 2020 class
-// Reformat Code from the main menu or press Ctrl+Alt+L
 fun main(){
+    val animal: Animal = Wolf()
+    animal.eat()
 
-    val d = DrumKit(true, true)
-    d.playTopHat()
-    d.playSnare()
-    d.playTopHat()
+    val animals = arrayOf(Hippo(), Wolf())
 
+    for(item in animals){
+        item.roam()
+        item.eat()
+    }
 }
