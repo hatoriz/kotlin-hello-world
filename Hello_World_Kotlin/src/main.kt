@@ -8,4 +8,11 @@ fun main(){
         item.roam()
         item.eat()
     }
+
+    println("--- Vet is giving a shot for wolf and hippo")
+    val vet = Vet()
+    val wolf = Wolf()
+    val hippo = Hippo()
+    vet.giveShot(wolf)
+    vet.giveShot(hippo)
 }
