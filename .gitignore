@@ -61,3 +61,4 @@ node_modules/
 libraries/tools/kotlin-test-js-runner/lib/
 local.properties
 *.class
+Hello_World_Kotlin/out/production/Hello_World_Kotlin/MainKt.class
