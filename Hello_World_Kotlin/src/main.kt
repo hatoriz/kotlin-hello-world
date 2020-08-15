@@ -1,10 +1,11 @@
+//Chapter 4
+//For 2 august 2020 class
+// Reformat Code from the main menu or press Ctrl+Alt+L
 fun main(){
-    println("Hello World from Kotlin !")
 
-    var x = 3
+    val d = DrumKit(true, true)
+    d.playTopHat()
+    d.playSnare()
+    d.playTopHat()
 
-    while (x >1){
-        println("X is $x")
-        x = x -1
-    }
 }
